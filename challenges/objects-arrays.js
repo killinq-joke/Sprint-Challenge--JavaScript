@@ -122,7 +122,9 @@ displayNames will be an array of strings, and each string should follow this pat
 
 */
 const displayNames = [];
-
+zooAnimals.forEach(function(item){
+  displayNames.push(`Name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+});
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -157,6 +159,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
+zooAnimals.reduce((acc, animal) => acc + animal, 0);
 console.log(populationTotal);
 
 
