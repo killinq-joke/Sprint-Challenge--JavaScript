@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 2. What is the difference between a function and a method?
 a method is a function inside an object
 
-3. What is closure?
+3. What is closure?git
 closures are internal functions that can access variables defined inside another function even after the execution of this external function!
 
 4. Describe the four rules of the 'this' keyword.
