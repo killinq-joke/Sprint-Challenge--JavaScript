@@ -32,12 +32,21 @@ Edit this document to include your answers after each question. Make sure to lea
 .forEach makes the changes directly on the array or .map makes another array with the changes
 
 2. What is the difference between a function and a method?
-
+a method is a function inside an object
 
 3. What is closure?
-
+closures are internal functions that can access variables defined inside another function even after the execution of this external function!
 
 4. Describe the four rules of the 'this' keyword.
+
+  - "this" targets the object which the thing that we call is within 
+    (for a global variable it will be the window, for a method inside an object container, it will be the object container)
+
+  - Whenever a function that's called with a "." before it, the object before the "." is "this"
+
+  - When the child of a constructor is created, "this" targets the child
+
+  - call() and apply() use this as their first argument
 
 
 5. Why do we need super() in an extended class?

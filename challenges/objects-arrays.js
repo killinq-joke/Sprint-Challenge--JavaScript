@@ -77,10 +77,10 @@ universities = graduates.sort(function(a, b) {
   if (a.university < b.university) {
     return -1;
   }
-  if (a.university > b.university) {
+  else {
     return 1;
   }
-  return 0;
+  
 });
 console.log(universities);
 
@@ -157,8 +157,7 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = [];
- lowPopulationAnimals.push(zooAnimals.filter(currentItem => currentItem.population < 5));
+const lowPopulationAnimals = zooAnimals.filter(currentItem => currentItem.population < 5);
 
 console.log(lowPopulationAnimals);
 
