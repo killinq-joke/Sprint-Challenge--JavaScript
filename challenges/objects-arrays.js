@@ -147,6 +147,8 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+ lowPopulationAnimals.push(zooAnimals.filter(currentItem => currentItem.population < 5));
+
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
